@@ -16,17 +16,15 @@ spec:
       - name: guestbook
         image: xldevdocker/guestbook:latest
         env:
-          - name: REDIS_HOST
-            value: redis
-
+        - name: REDIS_HOST
+          value: redis
 ---
-
 apiVersion: v1
 kind: Service
 metadata:
   name: guestbook
 spec:
-  type: ClusterIP  
+  type: ClusterIP
   ports:
   - name: guestbook
     port: 8080
