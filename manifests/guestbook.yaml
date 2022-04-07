@@ -13,8 +13,8 @@ spec:
         app: guestbook
     spec:
       containers:
-      - image: xldevdocker/guestbook:latest
-        name: guestbook
+      - name: guestbook
+        image: xldevdocker/guestbook:latest
         env:
           - name: REDIS_HOST
             value: redis
