@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: guestbook-container
-        image: xldevdocker/guestbook:uat
+        image: xldevdocker/guestbook:7d810e5
         env:
         - name: REDIS_HOST
           value: redis
